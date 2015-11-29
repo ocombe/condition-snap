@@ -8,6 +8,5 @@ node_modules
 .tmp
 
 # source/config
-src
 test
 .gitignore
