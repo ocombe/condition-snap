@@ -1,0 +1,40 @@
+{
+  "name": "condition-snap",
+  "description": "make sure things only the right builds on snap get published",
+  "author": "Olivier Combe <olivier.combe@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/ocombe/condition-snap/issues"
+  },
+  "dependencies": {
+    "@semantic-release/error": "^1.0.0"
+  },
+  "devDependencies": {
+    "commitizen": "^2.4.6",
+    "cz-conventional-changelog": "^1.1.4",
+    "semantic-release": "^5.0.1"
+  },
+  "homepage": "https://github.com/ocombe/condition-snap#readme",
+  "keywords": [
+    "publish",
+    "release",
+    "semantic-release",
+    "snap",
+    "snap-ci"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "release": {
+    "verifyConditions": "condition-snap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ocombe/condition-snap.git"
+  },
+  "scripts": {
+    "commit": "git-cz",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
+  }
+}
