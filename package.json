@@ -23,7 +23,7 @@
     "snap-ci"
   ],
   "license": "MIT",
-  "main": "src/index.js",
+  "main": "index.js",
   "release": {
     "verifyConditions": "condition-snap"
   },
